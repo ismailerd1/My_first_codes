@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Details</title>
+    <link rel="stylesheet" href="{% static 'details.css' %}">
+</head>
+<body>
+    <a href="https://www.youtube.com" id="youtube">Back to Youtube</a>
+    <h1 id="header">Here is your video!</h1>
+
+    <p id="video_title">{{video_title}}</p>
+    <div class="wrapper">
+    <img src="{{ thumbnail_url }}" alt="Video Thumbnail" id="video_thumb">
+    </div>
+    <div class="options">
+    <h2>Download Options:</h2>
+    <ul>
+        {% for stream in video_streams %}
+        <li>
+            {{ stream.resolution }} - 
+            <a href="{{ stream.url }}" download="{{ video_title }}_{{ stream.resolution }}.mp4">
+                <button>Download</button>
+            </a>
+        </li>
+        <br>
+        {% endfor %}
+    </ul>
+    </div>
+</body>
+<div id="whitespace"></div>
+</html>

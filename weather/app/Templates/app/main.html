@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1 class="welcome">What's the weather like today?</h1>
+
+    <div class="link_back">
+    <a href="https://www.weatherapi.com/" title="Free Weather API"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com" ></a>
+    <p id="href">Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></p>
+    </div>
+
+
+
+    <form method="post">
+    {% csrf_token %}
+     <div class="city_search">
+        {{ form.name }}
+        <button type="submit" id="add_btn">Add</button>
+     </div>
+    </form>
+
+    <h3 id="added_cities">Added cities:</h3>
+
+    {% for city_weather in weather_cities %}
+    <div class="city">
+        <div class="div_icon">
+            <img id="icon" src="{{ city_weather.icon }}" alt="weather icon">
+        </div>
+        <div class="information">
+            <h3 class="div_city">{{ city_weather.city }}</h3>
+                <h4 class="div_temp"><img id="termometer" src="{% static 'img/termometer.jpg' %}" alt="icon">{{city_weather.temperature}}°C</h4>
+                <h4 class="div_decrp">{{ city_weather.description }}</h4>
+            <div class="second_binary">
+                <h4 class="div_wind"><img id="wind" src="{% static 'img/wind.jpg' %}" alt="icon"> {{ city_weather.wind }}km/h </h4>
+                <h4 class="div_humid"><img id="humidity" src="{% static 'img/humidity.png' %}" alt="icon">{{city_weather.humidity}}%</h4>
+            </div>
+        </div>
+        <div class="dlt_container">
+            <form action="{% url 'delete_city' city_weather.city %}" method="post">
+                {% csrf_token %}
+                <button id="dlt_btn" type="submit">Delete</button>
+            </form>
+             </div>
+    </div>
+    {% endfor %}
+</body>
+</html>
+

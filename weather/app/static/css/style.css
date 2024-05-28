@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: linear-gradient(to right, #5a0b0b, #941313, #de5815, #98ccdf, #4990b4, #3263a3, rgb(0, 86, 171), #500894);
+}
+
+.welcome{
+    text-align: center;
+    font-size: 2em;
+    border-radius: 3em;
+    border-style: solid;
+    border-width: medium;
+    border-color: #09517a;
+    background-color: #3ba1db;
+    padding: 1em 0 ;
+    max-width: 50%;
+    margin: 0 auto;
+    
+}
+.city_search{
+    text-align: center;
+    margin: 1.5em;
+
+}
+
+#add_city{
+    font-size: 1em;
+    padding: 0.5em;
+    border-color: black;
+    margin-right: 0.7em;
+    padding-top: 0.8em;
+    padding-bottom: 0.4em;
+}
+
+#add_btn{
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 0.1em 0.8em;
+    background-color: aquamarine;
+}
+
+#add_btn:active{
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 0.1em 0.8em;
+    background-color: black;
+    color: aquamarine;
+}
+
+#added_cities{
+    border: 0.1em solid black;
+    padding: 0.3em;
+    max-width: 8%;
+    text-align: center;
+    font-size: larger;
+    background-color: aquamarine;
+    margin-left: 10%;
+}
+
+
+.city{
+    display:flex;
+    flex-direction: row;
+    border: 0.1em solid yellow;
+    border-radius: 2em;
+    margin: 1.3em auto;
+    text-align: center;
+    max-width: 45%;
+    padding: 0.7em;
+    background-color: #28f58b;
+
+}
+
+.link_back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: black;
+}
+.link_back a {
+    color: black;
+    text-decoration: none;
+}
+#href{
+    background-color: #007438;
+}
+
+#icon{
+    max-width: 1000%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+}
+.div_icon{
+    
+    margin-right: 1.5em;
+    margin-top: 1em;
+    margin-left: 0;
+}
+
+.information{
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.second_binary{
+    display:flex;
+    flex-direction: row;
+    padding-top: 0.5em;
+}
+
+.div_wind{
+    padding-right: 0;
+}
+
+.div_humid{
+    padding-left: 0;
+}
+.div_decrp{
+    padding-top: 0.5em;
+}
+
+.div_temp{
+    padding-top: 0.5em;
+}
+
+#termometer{
+    max-width: 6%;
+}
+
+#wind{
+    max-width: 11%;
+    padding-right: 0;
+}
+
+#humidity{  
+    max-width: 11%;
+    padding-right: 0;
+    padding-left: 0;
+
+}
+.dlt_container{
+    position: relative;
+    right: 0;
+}
+
+#dlt_btn{
+    width: 5em;
+    height: 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 2em;
+    border-width: 0.1em;
+    background-color: red;
+    font-weight: bold;
+
+}
+
+   

@@ -1,0 +1,52 @@
+*{
+    background-color: rgb(226, 226, 226);
+}
+
+#youtube{
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    margin-top: 1vw;
+    font-size: 1.7vw;
+    padding: 1vw;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 2vw;
+    text-decoration: none;
+    
+}
+
+#header{
+    font-size: 2vw;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 4vw;
+    
+}
+
+#video_title{
+    font-size: 2.8vw;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 3vw;
+    color: red;
+    
+}
+
+#video_thumb{
+    max-height: 30vw;
+
+}
+
+.wrapper{
+    text-align: center;
+}
+
+.options{
+    margin-top: 3vw;
+    margin-left: 10vw;
+}
+
+#whitespace{
+    margin-top: 10rem;
+}

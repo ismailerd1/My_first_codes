@@ -1,0 +1,69 @@
+*{
+    background-color: rgb(246, 246, 246);
+}
+
+#youtube{
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    margin-top: 1vw;
+    font-size: 1.7vw;
+    padding: 1vw;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 2vw;
+    text-decoration: none;
+    
+}
+
+#welcome{
+    font-size: 2.4vw;
+    font-weight: bolder;
+    text-align: center;
+    color: red;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+
+}
+
+#error{
+    background-color: red;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding: 0.8vw;
+    border-radius: 1rem;
+    margin-top: 4vw;
+    
+}
+
+
+.myform{
+    text-align: center;
+    margin-top: 6vw;
+}
+
+#label{
+    margin-right: 4vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+#video_url{
+    height: 2vw;
+    background-color: rgb(255, 135, 135);
+    border-radius: 0.8rem;
+    padding: 0.2vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+#submit_btn{
+    margin-top: 2vw;
+    font-weight: bold;
+    font-size: 1.2vw;
+    padding: 0.7vw;
+    border-radius: 1.2rem;
+    background-color: rgb(255, 55, 55);
+}
